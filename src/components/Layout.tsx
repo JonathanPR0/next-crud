@@ -8,11 +8,11 @@ interface LayoutProps {
 const Layout = (props: LayoutProps) => {
   return (
     <div className={`
-      flex flex-col w-2/3
+      flex flex-col w-full sm:w-2/3
       bg-white text-gray-800 rounded-md
     `}>
-      <Title>Titulo</Title>
-      <div className="p-6">
+      <Title>Cadastrar Usuários</Title>
+      <div className="p-5">
         {props.children}
       </div>
     </div>

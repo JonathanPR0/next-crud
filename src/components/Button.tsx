@@ -9,8 +9,8 @@ const Button = (props: ButtonProps) => {
   const color = props.color ?? "emerald"
   return (
     <button className={`
-      bg-${color}-500 text-white font-bold text-xl
-       px-6 py-4 rounded-md
+      bg-${color}-500 text-white font-bold text-md
+       px-4 py-2 rounded-md
       ${props.className || ""}
     `} onClick={props.onClick}>
       {props.children}

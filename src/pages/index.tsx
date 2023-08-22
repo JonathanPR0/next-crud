@@ -19,13 +19,13 @@ export default function Home() {
 
   return (
     <main
-      className="flex items-center justify-center h-screen bg-gradient-to-r from-green-400 to-emerald-500 text-white"
+      className="flex items-center justify-center min-h-screen h-full bg-gradient-to-r from-green-400 to-emerald-500 text-white px-5 py-6 sm:px-0"
     >
       <Layout title='Cadastro Simples'>
         {tableIsVisible ? (
           <>
             <div className='flex justify-end'>
-              <Button className='mb-4' color='emerald' onClick={newClient}>Novo CLiente</Button>
+              <Button className='mb-2 w-full sm:w-auto' color='emerald' onClick={newClient}>Novo CLiente</Button>
             </div>
             <Table clients={clients} selectedClient={selectedClient} removedClient={removedClient}></Table>
           </>
